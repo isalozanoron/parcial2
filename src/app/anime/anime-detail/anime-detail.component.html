@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ animeDetail.name }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ animeDetail.img }}"
+          alt="{{ animeDetail.name }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dd>{{ animeDetail.img }}</dd>
+        <hr />
+        <dd class="bold">{{ animeDetail.name }}</dd>
+        <hr />
+        <dt class="bold">Description</dt>
+        <dd>{{ animeDetail.description }}</dd>
+        <hr />
+        <dt class="bold">Rating⭐</dt>
+        <dd>{{ animeDetail.rating }}</dd>
+        <hr />
+        <dt class="bold">Studio</dt>
+        <dd>{{ animeDetail.studio }}</dd>
+        <hr />
+        <dt class="bold">Number of episodes</dt>
+        <dd>{{ animeDetail.episode }}</dd>
+        <hr />
+      </dl>
+    </div>
+  </div>
+</div>

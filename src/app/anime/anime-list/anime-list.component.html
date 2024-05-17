@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div>
+    <br />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col mb-2" *ngIf="selected">
+          <app-anime-detail [animeDetail]="selectedAnime"></app-anime-detail>
+          <div class="card p-2" style="width: 15rem; height: 33rem">
+            <img
+              class="card-img-top"
+              src="{{ anime.img }}"
+              alt="{{ anime.name }}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ anime.name }}</h5>
+              <p class="card-text">[{{ anime.rating}}]</p>
+              <p class="card-text">[{{ anime.categorie}}]</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>
